@@ -3,6 +3,5 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 AppendLangExt(char (&) [255], LocaleMasks) | snapshot.so
-GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | snapshot.so
 VideoClass::SetClip(short, short, short, short) | snapshot.so
 SystemClass::WaitTouch(long) | snapshot.so
