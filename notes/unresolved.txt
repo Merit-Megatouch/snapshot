@@ -1,0 +1,61 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+FileExists(char const*) | snapshot.so
+SeniorsHelp(int, bool) | snapshot.so
+AppendLangExt(char (&) [255], LocaleMasks) | snapshot.so
+GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | snapshot.so
+QueFlush(bool) | snapshot.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | snapshot.so
+VideoClass::SetClip(short, short, short, short) | snapshot.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | snapshot.so
+WorldClass::WorldClass() | snapshot.so
+SystemClass::WaitTouch(long) | snapshot.so
+db_gamedata::gamedata_record::gamedata_record(db_gamedata::gamedata_record const&) | snapshot.so
+db_gamedata::gamedata_record::gamedata_record() | snapshot.so
+db_gamedata::gamedata_record::~gamedata_record() | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::AdjustTime(int, long) | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::copy(abstract_record const*) | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::AddChild(abstract_xml_record*, char const*, unsigned int) | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::NewChild(char*) | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::GameSettingsRandom_record() | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::~GameSettingsRandom_record() | snapshot.so
+abstract_xml_record::AdjustTimeFields(int, long) | snapshot.so
+RandomizedArrayClass::GetNextValue(int) | snapshot.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | snapshot.so
+RandomizedArrayClass::~RandomizedArrayClass() | snapshot.so
+Bitmap::ConvertSmack(unsigned char) | snapshot.so
+Bitmap::CopyFromScreen(int, int, bool) | snapshot.so
+Bitmap::SmackAnimationAdvance(unsigned char) | snapshot.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | snapshot.so
+Bitmap::SmackAnimationChangeFRate(int) | snapshot.so
+Bitmap::Colorize(int, int, int) | snapshot.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | snapshot.so
+Bitmap::LoadSmack(char*, unsigned char, unsigned char) | snapshot.so
+DBFClass::GetNumRecords() | snapshot.so
+DBFClass::SetEncryption(bool) | snapshot.so
+DBFClass::OpenDBF(char const*) | snapshot.so
+DBFClass::CloseDBF() | snapshot.so
+DBFClass::GetRecord(int) | snapshot.so
+DBFClass::nGetField(unsigned int, char*, unsigned int, bool) | snapshot.so
+DBFClass::DBFClass() | snapshot.so
+Settings::Init() | snapshot.so
+Settings::Load() | snapshot.so
+Settings::Cleanup() | snapshot.so
+Settings::Restore(abstract_xml_record const*) | snapshot.so
+Settings::Settings(char const*, unsigned int) | snapshot.so
+Settings::~Settings() | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::ChildCount() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::GetChildren() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::cTag() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::eTag() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::clone() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::equal(abstract_record const*) const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::Metadata() const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::ChildName(int) const | snapshot.so
+xml_gamerandom::GameSettingsRandom_record::not_equal(abstract_record const*) const | snapshot.so
+Settings::Key(unsigned int, bool) const | snapshot.so
+typeinfo for Settings | snapshot.so
+typeinfo for xml_gamerandom::GameSettingsRandom_record | snapshot.so
+vtable for DOSLinuxWorld | snapshot.so
